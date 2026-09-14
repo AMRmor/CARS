@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f0eb">
+  <meta name="description" content="CARS — prototype de mini-voiture. Une plateforme roulante compacte conçue pour expérimenter, mesurer et itérer.">
+  <meta property="og:title" content="CARS — Prototype mini-voiture">
+  <meta property="og:description" content="Prototype roulant, architecture modulaire, essais et développement R&D.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/social-card.svg">
+  <title>CARS — Prototype mini-voiture</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" data-nav>
+    <a class="logo" href="#top" aria-label="CARS, accueil">CARS<span>®</span></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#concept">Concept</a><a href="#architecture">Architecture</a><a href="#essais">Essais</a><a href="#journal">Journal</a>
+    </nav>
+    <a class="nav-cta" href="https://github.com/AMRmor/CARS" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">PROTOTYPE / P01</div>
+        <h1 id="hero-title">Small car.<br>Serious engineering.</h1>
+        <p>Une plateforme roulante compacte pour concevoir, instrumenter, tester et améliorer un système véhicule complet à échelle réduite.</p>
+        <a class="text-link" href="#concept">Découvrir le prototype <span>↓</span></a>
+      </div>
+      <div class="hero-stage" aria-hidden="true">
+        <div class="stage-glow"></div><img src="assets/car-hero.svg" alt="" class="hero-car">
+        <div class="stage-caption stage-caption-a"><span>01</span> Plateforme roulante</div>
+        <div class="stage-caption stage-caption-b"><span>02</span> Architecture modulaire</div>
+      </div>
+      <div class="hero-footer"><span>CARS / RESEARCH PROTOTYPE</span><span>BUILD · TEST · MEASURE</span><span>2026</span></div>
+    </section>
+
+    <section id="concept" class="statement section-pad">
+      <div class="index">01</div><div><p class="section-kicker">Le concept</p><h2>Pas une maquette.<br>Un banc d’essai qui roule.</h2><p class="lede">CARS concentre mécanique, énergie, commande et acquisition de données dans un format compact. Le projet sert à vérifier des choix techniques par l’essai réel plutôt qu’à présenter des performances non mesurées.</p></div>
+    </section>
+
+    <section class="fullbleed dark-panel">
+      <div class="dark-copy"><p class="section-kicker light">Design intent</p><h2>Everything has<br>a reason to be there.</h2><p>Accès direct aux sous-systèmes, pièces remplaçables, points de mesure visibles et architecture suffisamment simple pour diagnostiquer rapidement un défaut.</p></div>
+      <img src="assets/chassis-detail.svg" alt="Illustration technique du châssis du prototype CARS" class="detail-art"><div class="panel-label">P01 / SYSTEM LAYOUT</div>
+    </section>
+
+    <section id="architecture" class="architecture section-pad">
+      <div class="architecture-title"><div class="index">02</div><div><p class="section-kicker">Architecture</p><h2>Six fonctions.<br>Une seule plateforme.</h2></div></div>
+      <div class="arch-list">
+        <article><span>01</span><h3>Structure</h3><p>Châssis, enveloppe, supports, fixation et maintenance.</p><i>MECHANICAL</i></article>
+        <article><span>02</span><h3>Énergie</h3><p>Stockage, distribution, protection et mesure électrique.</p><i>POWER</i></article>
+        <article><span>03</span><h3>Propulsion</h3><p>Moteur, transmission, roues et comportement dynamique.</p><i>MOTION</i></article>
+        <article><span>04</span><h3>Commande</h3><p>Contrôle, communication, télémétrie et arrêt de sécurité.</p><i>CONTROL</i></article>
+        <article><span>05</span><h3>Perception</h3><p>Capteurs et mesures utiles à la compréhension de l’environnement.</p><i>SENSING</i></article>
+        <article><span>06</span><h3>Logiciel</h3><p>Firmware, configuration, logs, validation et analyse.</p><i>SOFTWARE</i></article>
+      </div>
+    </section>
+
+    <section class="spec-section">
+      <div class="spec-visual"><img src="assets/top-view.svg" alt="Vue de dessus conceptuelle du prototype CARS"><div class="measure measure-x">L — à mesurer</div><div class="measure measure-y">W — à mesurer</div></div>
+      <div class="spec-copy"><p class="section-kicker">P01 / Baseline</p><h2>Mesurer avant d’annoncer.</h2><p>La fiche prototype distingue explicitement les données connues, les objectifs de conception et les mesures qui doivent encore être validées sur le véhicule.</p><dl><div><dt>Échelle</dt><dd>À définir</dd></div><div><dt>Masse</dt><dd>À mesurer</dd></div><div><dt>Vitesse</dt><dd>À mesurer</dd></div><div><dt>Autonomie</dt><dd>À mesurer</dd></div><div><dt>Architecture</dt><dd>Modulaire</dd></div><div><dt>Version</dt><dd>P01</dd></div></dl></div>
+    </section>
+
+    <section id="essais" class="tests section-pad">
+      <div class="tests-head"><div class="index">03</div><div><p class="section-kicker">Validation</p><h2>Une décision technique<br>doit laisser une trace.</h2></div></div>
+      <div class="test-table" role="table" aria-label="Plan d'essais prototype P01">
+        <div class="test-row test-header" role="row"><span>ID</span><span>Essai</span><span>Mesure</span><span>État</span></div>
+        <div class="test-row" role="row"><span>T01</span><strong>Chaîne d’énergie</strong><span>Tension · courant · température</span><em>À planifier</em></div>
+        <div class="test-row" role="row"><span>T02</span><strong>Propulsion</strong><span>Vitesse · réponse · échauffement</span><em>À planifier</em></div>
+        <div class="test-row" role="row"><span>T03</span><strong>Direction</strong><span>Angle · répétabilité · jeu</span><em>À planifier</em></div>
+        <div class="test-row" role="row"><span>T04</span><strong>Autonomie</strong><span>Durée · consommation · dérive</span><em>À planifier</em></div>
+      </div>
+    </section>
+
+    <section class="process fullbleed">
+      <div class="process-copy"><p class="section-kicker">Méthode</p><h2>Build.<br>Test.<br>Measure.<br>Repeat.</h2></div>
+      <div class="process-steps"><article><span>01</span><div><h3>Concevoir</h3><p>Formuler l’exigence et choisir une architecture testable.</p></div></article><article><span>02</span><div><h3>Intégrer</h3><p>Assembler le minimum nécessaire pour tester la fonction.</p></div></article><article><span>03</span><div><h3>Mesurer</h3><p>Capturer les données et documenter les conditions d’essai.</p></div></article><article><span>04</span><div><h3>Décider</h3><p>Conserver, corriger ou abandonner sur la base des résultats.</p></div></article></div>
+    </section>
+
+    <section id="journal" class="journal section-pad">
+      <div class="journal-head"><div class="index">04</div><div><p class="section-kicker">Journal R&D</p><h2>Le projet doit pouvoir<br>être relu, pas deviné.</h2></div></div>
+      <div class="journal-grid"><article class="journal-feature"><span class="journal-no">LOG / 001</span><h3>Baseline P01</h3><p>Créer une première configuration de référence avant toute optimisation.</p><div class="journal-meta">Architecture · Documentation</div></article><article><span class="journal-no">LOG / 002</span><h3>Instrumentation</h3><p>Définir les points de mesure utiles avant la première campagne d’essais.</p><div class="journal-meta">Mesure · Validation</div></article><article><span class="journal-no">LOG / 003</span><h3>Plan d’essais</h3><p>Relier chaque exigence à une procédure, une donnée et un critère de décision.</p><div class="journal-meta">Tests · Traçabilité</div></article></div>
+    </section>
+
+    <section class="closing"><img src="assets/car-hero.svg" alt="" aria-hidden="true"><div class="closing-overlay"></div><div class="closing-copy"><p>CARS / P01</p><h2>Prototype first.<br>Claims later.</h2><a href="https://github.com/AMRmor/CARS" target="_blank" rel="noreferrer">Voir le dépôt GitHub ↗</a></div></section>
+  </main>
+  <footer><div class="footer-logo">CARS<span>®</span></div><div>Mini Vehicle Research Prototype</div><div>Paris · 2026</div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
